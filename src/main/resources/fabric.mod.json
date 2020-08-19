@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "notnice",
+  "version": "${version}",
+
+  "name": "notnice",
+  "description": "A clientside minecraft mod that does some notnice things.",
+  "authors": [
+    "Austin Albrecht",
+    "Sebiann"
+  ],
+  "contact": {
+    "homepage": "https://sebiann.moe/",
+    "sources": "https://github.com/Sebiann/notnice"
+  },
+
+  "license": "AGPL-3.0",
+  "icon": "assets/notnice/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "moe.sebiann.notnice.NotNiceMod"
+    ],
+    "cotton-client-commands": ["moe.sebiann.notnice.Commands"]
+  },
+
+  "mixins": [
+    "notnice.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.2",
+    "cotton-client-commands": "^1.0.0"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
